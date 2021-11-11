@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>penrose</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_body">
+          <a href="#" class="header_logo">
+            <img class="logo_icon" src="img/Triangle.png" alt="logo" />
+            <span>penrose</span>
+          </a>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <li><a class="first_header_link">Home</a></li>
+              <li>
+                <a href="#" class="header_link">New collection</a>
+              </li>
+              <li>
+                <a href="#" class="header_link">Store ></a>
+                <!-- <ul> <a href="#" class="header_link">Store </a>
+                    <li>li 1</li>
+                    <li>li 2</li>
+                </ul> -->
+              </li>
+              <li>
+                <a href="#" class="header_link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main_body">
+          <section class="main_column__preview">
+            <div class="preview_container">
+              <h3 class="preview_place">a fashion club</h3>
+              <h1 class="preview_name">
+                Pen <br />
+                rose
+              </h1>
+              <h2 class="preview_title">Coctail</h2>
+              <p class="preview_text">
+                Jump at a chance to participate in our new fashion adventure.
+              </p>
+            </div>
+            <div class="video_container">
+              <div class="video_player">
+                <a
+                  href="https://www.youtube.com/watch?v=N0QblwXyXvo&ab_channel=%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%9F%D1%82%D1%83%D1%88%D0%BA%D0%B8%D0%BD"
+                  target="_b"
+                  ><img
+                    src="img/player.png"
+                    alt="player button"
+                    class="player_icon"
+                /></a>
+              </div>
+            </div>
+          </section>
+          <section class="main_column__illustration"></section>
+          <section class="main_column__slider">
+            <div class="sim_slider">
+              <ul class="sim_slider_list">
+                <li class="sim_slider_zero_screen"></li>
+                <li class="sim_slider_element">
+                  <p class="sim_slider_paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Cupiditate commodi repellendus quidem, pariatur ratione
+                    aliquam odio eveniet.
+                  </p>
+                  <p class="sim_slider_author">Author</p>
+                </li>
+                <li class="sim_slider_element">
+                  <p class="sim_slider_paragraph">
+                    distinctio incidunt rerum deserunt reiciendis nihil ut modi
+                    perspiciatis dignissimos totam quis ab corrupti velit odit.
+                  </p>
+                  <p class="sim_slider_author">Author Author</p>
+                </li>
+                <li class="sim_slider_element">
+                  <p class="sim_slider_paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam architecto asperiores facere eaque quisquam,
+                  </p>
+                  <p class="sim_slider_author">Author</p>
+                </li>
+              </ul>
+              <div class="sim_slider_arrow_left"></div>
+              <div class="sim_slider_arrow_right"></div>
+              <div class="sim_slider_dots"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".header_burger").click(function (event) {
+        $(".header_burger, .header_menu").toggleClass("active");
+        $("body").toggleClass("lock");
+      });
+    });
+  </script>
+</html>
