@@ -74,8 +74,8 @@
           <section class="main_column__illustration"></section>
           <section class="main_column__slider">
             <div class="sim_slider">
-              <ul class="sim_slider_list">
-                <li class="sim_slider_zero_screen"></li>
+              <ul class="sim_slider_list" id="slider_items_container">
+                <!-- <li class="sim_slider_zero_screen"></li>
                 <li class="sim_slider_element">
                   <p class="sim_slider_paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -97,7 +97,7 @@
                     Quam architecto asperiores facere eaque quisquam,
                   </p>
                   <p class="sim_slider_author">Author</p>
-                </li>
+                </li> -->
               </ul>
               <div class="sim_slider_arrow_left"></div>
               <div class="sim_slider_arrow_right"></div>
@@ -107,13 +107,24 @@
         </div>
       </div>
     </main>
+    <template id="slider_tmpl">
+      <li class="sim_slider_element">
+        <p class="sim_slider_paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+          commodi repellendus quidem, pariatur ratione aliquam odio eveniet.
+        </p>
+        <p class="sim_slider_author">Author</p>
+      </li></template
+    >
   </body>
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"
   ></script>
-  <script src="scripts/slider.js"></script>
+
+  <script src="scripts/data.js"></script>
   <script src="scripts/burger-menu.js"></script>
   <script src="scripts/top-menu.js"></script>
+  <script src="scripts/slider.js"></script>
 </html>
