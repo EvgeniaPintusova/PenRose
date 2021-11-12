@@ -24,12 +24,16 @@
               <li>
                 <a href="#" class="header_link">New collection</a>
               </li>
-              <li>
-                <a href="#" class="header_link">Store ></a>
-                <!-- <ul> <a href="#" class="header_link">Store </a>
-                    <li>li 1</li>
-                    <li>li 2</li>
-                </ul> -->
+              <li class="topmenu_link">
+                <a href="#" class="header_link">Store </a
+                ><span class="submenu_arrow" id="downMenu"
+                  ><img src="img/arrow-down.png" alt=""
+                /></span>
+                <ul class="submenu" id="submenu">
+                  <li><a class="submenu_link" href="#">Women</a></li>
+                  <li><a class="submenu_link" href="#">Men</a></li>
+                  <li><a class="submenu_link" href="#">Kids</a></li>
+                </ul>
               </li>
               <li>
                 <a href="#" class="header_link">Contacts</a>
@@ -109,13 +113,7 @@
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"
   ></script>
-  <script src="script.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".header_burger").click(function (event) {
-        $(".header_burger, .header_menu").toggleClass("active");
-        $("body").toggleClass("lock");
-      });
-    });
-  </script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/burger-menu.js"></script>
+  <script src="scripts/top-menu.js"></script>
 </html>
