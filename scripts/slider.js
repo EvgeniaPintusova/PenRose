@@ -1,4 +1,4 @@
-function Sim(sldrId) {
+function Sim(sldrId, items) {
   let id = document.getElementById(sldrId);
   if (id) {
     this.sldrRoot = id;
@@ -162,4 +162,4 @@ Sim.initialize = function (that) {
     }
   }
 };
-new Sim();
+setTimeout(() => new Sim(), 2000);

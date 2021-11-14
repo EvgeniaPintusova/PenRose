@@ -260,7 +260,7 @@ body {
   align-items: center;
 }
 .sim_slider_zero_screen {
-  min-height: 150px;
+  min-height: 100px;
 }
 
 .sim_slider {
