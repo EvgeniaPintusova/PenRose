@@ -1,4 +1,4 @@
-function Sim(sldrId, items) {
+function Sim(sldrId) {
   let id = document.getElementById(sldrId);
   if (id) {
     this.sldrRoot = id;

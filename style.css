@@ -289,7 +289,7 @@ body {
   font-size: var(--font-size-text);
 }
 .sim_slider_paragraph {
-  min-height: 90px;
+  min-height: 50px;
   line-height: 150%;
   font-size: var(--font-size-text);
 }
